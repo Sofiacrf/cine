@@ -241,6 +241,7 @@ body {
 .slide img {
   width: 25rem;
   vertical-align: right;
+  overflow: hidden;
 }
 
 .slide a {
