@@ -1,86 +1,89 @@
 * {
-    margin: 10px;
-    padding: auto;
+  margin: 10px;
+  padding: auto;
 }
 .container {
-    text-align: center;
-    border-radius: 15px;
-    box-sizing: content-box;
-    padding: 10px;
-    background-color: rgb(223, 221, 221);
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: content-box;
+  padding: 10px;
+  background-color: rgb(223, 221, 221);
 }
 
 .header {
-    grid-area: header;
-    background-color: crimson;
-    border-radius: 10px;
-    padding: 8px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  grid-area: header;
+  background-color: crimson;
+  border-radius: 10px;
+  padding: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .form {
-    grid-area: form;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 5px;
+  grid-area: form;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
 }
 
 .form input {
-    margin: 10px 0px;
-	border: none;
-	padding: 2px;
-	border-radius: 5px;
-	width: 100%;
+  margin: 10px 0px;
+  border: none;
+  padding: 2px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .form select {
-    margin: 10px 0px;
-	border: none;
-	padding: 2px;
-	border-radius: 5px;
-	width: 100%;
+  margin: 10px 0px;
+  border: none;
+  padding: 2px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .form label {
-	cursor: pointer;
+  cursor: pointer;
 }
 
-.container{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: auto;
-    grid-template-areas:
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto;
+  grid-template-areas:
     "header"
-    "form"
+    "form";
 }
 
 .button {
-    border-radius: 20px;
-    background-color: crimson;
-    color: azure;
-    outline: auto;
+  border-radius: 20px;
+  background-color: crimson;
+  color: azure;
+  outline: auto;
+}
 
+.button:hover {
+  opacity: 0;
 }
 
 .button a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-@media(min-width: 768px){
-    .container{
-        grid-template-columns: auto;
-        grid-template-areas:
-        "header header"
-        "form form";
-    }
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header header"
+      "form form";
+  }
 }
 
-@media(min-width: 900px){
-    .container{
-        grid-template-columns: auto;
-        grid-template-areas:
-        "header header header"
-        "form form form";
-    }
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header header header"
+      "form form form";
+  }
 }
